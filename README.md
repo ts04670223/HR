@@ -2,16 +2,17 @@
 
 ## 資料庫設計：
 ```
-1. 首先先建立一個hr資料庫
-2. 建立四個資料表，分別是basicInformation、department、education、experience、supervisor。
-3. basicInformation用來存放個人基本資料，包含所屬部門欄位、員工編號欄位、姓名欄位、到職日期欄位、是否為主管欄位、隸屬主管欄位。
-4. department用來存放部門欄位。
-5. education用來存放學歷，包含學位欄位、學校欄位、畢業科系欄位、basicInformation的id欄位。
-6. experience用來存放經歷，包含服務單位欄位、職稱欄位、工作內容欄位、起欄位、迄欄位、basicInformation的id欄位。
-7. supervisor用來存放主管，包含主管名稱欄位、所屬部門欄位、職位欄位。
-8. department資料表主要用手動新增，以利之後若要更動部門可以快速同步更新。
-9. education和experience資料表以basicInformationID欄位與個人資料表id做串接，以利之後若要刪改資料可以連動，同時可以減少多餘資料。
-9. supervisor資料表以name與basicInformation個人資料表做串接，以利之後若要刪改資料可以連動，同時可以減少多餘資料。
+1. SQL Server 帳號:qq 密碼:1234。
+2. 首先先建立一個hr資料庫。。
+3. 建立四個資料表，分別是basicInformation、department、education、experience、supervisor。
+4. basicInformation用來存放個人基本資料，包含所屬部門欄位、員工編號欄位、姓名欄位、到職日期欄位、是否為主管欄位、隸屬主管欄位。
+5. department用來存放部門欄位。
+6. education用來存放學歷，包含學位欄位、學校欄位、畢業科系欄位、basicInformation的id欄位。
+7. experience用來存放經歷，包含服務單位欄位、職稱欄位、工作內容欄位、起欄位、迄欄位、basicInformation的id欄位。
+8. supervisor用來存放主管，包含主管名稱欄位、所屬部門欄位、職位欄位。
+9. department資料表主要用手動新增，以利之後若要更動部門可以快速同步更新。
+10. education和experience資料表以basicInformationID欄位與個人資料表id做串接，以利之後若要刪改資料可以連動，同時可以減少多餘資料。
+11. supervisor資料表以name與basicInformation個人資料表做串接，以利之後若要刪改資料可以連動，同時可以減少多餘資料。
 ```
 1. 個人基本資料資料表-basicInformation
    - id
